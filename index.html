@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ====== icon ====== -->
+
+        <link rel="icon" href="./images/icon.ico">
+
+        <!-- ====== font-awesome-CDN ====== -->
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+
+        <!-- ====== link-css ====== -->
+        
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- ====== title ====== -->
+
+        <title>CRUDS System</title>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="logo">
+
+                <a href="#">CRUDS</a>
+
+            </div>
+
+            <div class="dark_mode">
+
+                <button id="dark_mode">
+
+                    <span class="material-icons-outlined">
+                        light_mode
+                    </span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <section class="form">
+
+            <form id="add_form">
+
+                <div class="input_cont top_input">
+
+                    <label for="name">
+
+                        <p>Product Name :</p>
+
+                        <span id="err_name" class="error_msg"></span>
+
+                    </label>
+                    <input id="name" type="text">
+
+                </div>
+
+                <div class="input_cont top_input">
+
+                    <label for="category">
+
+                        <p>Product Category :</p>
+                        
+                        <span id="err_cate" class="error_msg"></span>
+
+                    </label>
+                    <input id="category" type="text">
+
+                </div>
+
+                <div class="input_cont middle_input">
+
+                    <label for="price">
+
+                        <p>Product Price :</p>
+                        
+                        <span id="err_price" class="error_msg"></span>
+
+                    </label>
+                    <input id="price" type="text">
+
+                </div>
+
+                <div class="input_cont middle_input">
+
+                    <label for="discount">
+
+                        <p>Product Discount :</p>
+                        
+                        <span id="err_disc" class="error_msg"></span>
+
+                    </label>
+                    <input id="discount" type="text">
+
+                </div>
+
+                <div class="input_cont middle_input">
+
+                    <label for="quantity">
+
+                        <p>Product Quantity :</p>
+                        
+                        <span id="err_quant" class="error_msg"></span>
+
+                    </label>
+                    <input id="quantity" type="text">
+
+                </div>
+
+                <div class="input_cont bottom_input">
+
+                    <label for="description">
+
+                        <p>Product Description :</p>
+                        
+                        <span id="err_desc" class="error_msg"></span>
+
+                    </label>
+                    <input id="description" type="text">
+
+                </div>
+
+                <button id="add_pro" type="submit" class="add_pro">Add Product</button>
+
+            </form>
+
+        </section>
+
+        <div class="hr"></div>
+
+        <div style="margin-bottom: 20px;" class="search_input">
+        
+            <label for="search_pro">Search For A Products :</label>
+            <input id="search_pro" type="text">
+        
+        </div>
+
+        <section class="products">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th class="first_cell"><div> Name </div></th>
+                        <th><div> Category </div></th>
+                        <th><div> Price </div></th>
+                        <th><div> Discount </div></th>
+                        <th><div> Quantity </div></th>
+                        <th><div> Description </div></th>
+                        <th class="last_cell"><div> Actions </div></th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="show_data"></tbody>
+
+            </table>
+
+        </section>
+
+        <script src="./js/main.js"></script>
+
+    </body>
+
+</html>
